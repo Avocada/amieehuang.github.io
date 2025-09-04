@@ -32,6 +32,7 @@ nav_order: 1
     <p>
       👉 See my full <a href="{{ '/assets/pdf/CV.pdf' | relative_url }}"><strong>CV (PDF)</strong></a>.
     </p>
+
   </div>
 
   <div class="hero-photo">
