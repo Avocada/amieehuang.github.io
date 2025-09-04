@@ -16,8 +16,8 @@ profile:
   image_circular: false
 
 news: false            # hide the news box on the home page
-selected_papers: true  # show selected pubs in a compact style
-social: true           # show social icons under the hero
+selected_papers: false  # show selected pubs in a compact style
+social: false           # show social icons under the hero
 ---
 
 # 👋 Hey, I’m Amiee
