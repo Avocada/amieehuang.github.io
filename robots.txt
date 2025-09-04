@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://amieehuang.github.io/sitemap.xml
+Sitemap: https://avocada.github.io/sitemap.xml
