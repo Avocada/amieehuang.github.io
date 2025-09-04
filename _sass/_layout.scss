@@ -122,9 +122,9 @@ body.sticky-bottom-footer {
     color: var(--global-text-color);
   }
   a:hover {
-    transform: translateY(-1px);
-    background-color: var(--global-bg-color);
-    border-color: color.adjust(var(--global-divider-color), $lightness: -5%);
+  transform: translateY(-1px);
+  background-color: var(--global-bg-color);
+  border-color: var(--global-text-color); // simple + works in light & dark
   }
 }
 
