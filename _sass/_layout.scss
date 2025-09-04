@@ -38,6 +38,97 @@ body.sticky-bottom-footer {
   }
 }
 
+/************ Home Hero ************/
+.hero {
+  max-width: $hero-max-width;
+  margin: 6rem auto 3rem;
+  padding: 0 1.25rem;
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: $hero-gap;
+  align-items: center;
+
+  @media (max-width: 960px) {
+    grid-template-columns: 1fr;
+    margin-top: 3.5rem;
+  }
+}
+
+.hero-text {
+  p { margin: 0 0 1rem; }
+  ul {
+    margin: 1rem 0 1.25rem;
+    padding-left: 1.1rem;
+    li { margin: .4rem 0; }
+  }
+}
+
+.hero-title {  // use on your h1
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+
+  // make the wave emoji sit nicely with the text
+  .wave {
+    font-size: 0.85em;     // <span class="wave">👋</span>
+    transform: translateY(2px);
+  }
+}
+
+.hero-subtitle {  // your one-line location + role
+  @extend .lead;
+  font-weight: 600;
+}
+
+.hero-portrait {
+  justify-self: center;
+  position: relative;
+
+  img {
+    display: block;
+    width: clamp(260px, 40vw, 440px);
+    height: auto;
+    border-radius: $hero-radius;
+    box-shadow: $hero-shadow;
+    transform: rotate(3deg);
+    transform-origin: center;
+    object-fit: cover;
+  }
+
+  // keep a gentle tilt only on larger screens
+  @media (max-width: 960px) {
+    img { transform: none; width: min(75vw, 420px); }
+    margin-top: .75rem;
+  }
+}
+
+/* Social icons under the portrait (or anywhere) */
+.socials {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1.25rem;
+  a {
+    display: inline-flex;
+    width: 34px;
+    height: 34px;
+    border-radius: 999px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--global-divider-color);
+    text-decoration: none;
+    transition: transform .15s ease, background-color .15s ease,
+                border-color .15s ease, color .15s ease;
+    color: var(--global-text-color);
+  }
+  a:hover {
+    transform: translateY(-1px);
+    background-color: var(--global-bg-color);
+    border-color: color.adjust(var(--global-divider-color), $lightness: -5%);
+  }
+}
+
+
 // TODO: redefine content layout.
 
 /******************************************************************************

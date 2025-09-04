@@ -50,3 +50,19 @@ $back-to-top-right: 30px;
 $back-to-top-diameter: 40px;
 $back-to-top-height: $back-to-top-diameter;
 $back-to-top-width: $back-to-top-diameter;
+
+/* Hero heading & lead text */
+.h1, h1.hero-title {
+  font-size: $hero-h1-size;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: $hero-lead-size;
+  color: var(--global-text-color);
+  opacity: .9;
+  line-height: 1.6;
+  margin-top: .75rem;
+}

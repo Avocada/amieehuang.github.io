@@ -76,6 +76,11 @@
   }
 }
 
+:root[data-theme='dark'] .socials a {
+  border-color: rgba(255,255,255,.18);
+}
+
+
 html[data-theme="dark"] {
   color-scheme: dark;
   --global-bg-color: #{$grey-color-dark};
@@ -159,3 +164,5 @@ html[data-theme-setting="light"] {
     display: block;
   }
 }
+
+
