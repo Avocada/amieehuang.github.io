@@ -2,6 +2,9 @@
 layout: about
 title: about
 permalink: /
+nav: true
+nav_order: 1
+
 subtitle: >
   <a href='https://www.hsph.harvard.edu/'>Harvard T.H. Chan School of Public Health</a> ·
   <a href='https://hsph.harvard.edu/biostatistics/'>Biostatistics</a> ·
@@ -9,12 +12,12 @@ subtitle: >
 
 profile:
   align: right
-  image: profile_pic.jpg
+  image: /assets/img/profile_pic.jpg  
   image_circular: false
 
-news: true
-selected_papers: true
-social: true
+news: false            # hide the news box on the home page
+selected_papers: true  # show selected pubs in a compact style
+social: true           # show social icons under the hero
 ---
 
 # 👋 Hey, I’m Amiee
