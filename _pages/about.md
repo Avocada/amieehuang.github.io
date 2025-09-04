@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-nav: false          # <- avoid duplicate menu item (keep the one in _data/navigation.yml)
+nav: false # <- avoid duplicate menu item (keep the one in _data/navigation.yml)
 nav_order: 1
 
 subtitle: >
@@ -25,10 +25,16 @@ latest_posts:
 
 # 👋 Hey, I’m Amiee
 
-I’m a Postdoctoral Fellow in [Biostatistics](https://hsph.harvard.edu/biostatistics/) at the [Harvard T.H. Chan School of Public Health](https://www.hsph.harvard.edu/), advised by [Tianxi Cai](https://scholar.harvard.edu/tcai), and a Regulatory Science Fellow at the [Harvard-MIT Center for Regulatory Science](https://regulatoryscience.harvard.edu/) with [Florence Bourgeois](https://regulatoryscience.harvard.edu/people/florence-bourgeois/).
+I’m a Postdoctoral Fellow in Biostatistics at the Harvard T.H. Chan School of Public Health, advised by Prof.[Tianxi
+Cai](https://scholar.harvard.edu/tcai), and a Regulatory Science Fellow at the [Harvard-MIT Center for Regulatory
+Science](https://hmcrs.org/) with Dr. [Florence
+Bourgeois](https://research.childrenshospital.org/researchers/florence-bourgeois).
 
-I work on **longitudinal EHR**, **knowledge graphs & representation learning**, **LLMs / generative modeling**, and **causal inference / RWE**.
+I work on **longitudinal EHR**, **knowledge graphs & representation learning**, **LLMs / generative modeling**, and
+**causal inference / RWE**.
 
-Previously, I completed my PhD in Statistics at the [University of Hong Kong](https://www.hku.hk/) with [Guodong Li](https://gdli-stat.github.io/), supported by the [Hong Kong PhD Fellowship](https://cerg1.ugc.edu.hk/hkpfs/index.html).
+Previously, I completed my PhD in Statistics at the [University of Hong Kong](https://www.hku.hk/) with [Guodong
+Li](https://gdli-stat.github.io/), supported by the [Hong Kong PhD
+Fellowship](https://cerg1.ugc.edu.hk/hkpfs/index.html).
 
 👉 See my full **[CV (PDF)]({{ site.url }}/assets/pdf/CV.pdf)**.

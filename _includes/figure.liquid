@@ -1,4 +1,10 @@
-{% assign img_path = include.path | remove: '.jpg' | remove: '.jpeg' | remove: '.png' | remove: '.tiff' | remove: '.gif' %}
+{% assign img_path = include.path
+  | remove: '.jpg'
+  | remove: '.jpeg'
+  | remove: '.png'
+  | remove: '.tiff'
+  | remove: '.gif'
+%}
 {% assign parts = include.path | split: '.' %}
 {% assign ext = parts.last %}
 
