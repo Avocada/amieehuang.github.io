@@ -3,20 +3,6 @@
 # -----------------------------------------------------------------------------
 
 title: "Feiqing (Amiee) Huang"
-first_name: "Feiqing (Amiee)"
-middle_name: ""
-last_name: "Huang"
-contact_note: ""
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Biostatistics @ Harvard; Regulatory Science Fellow @ HMS/MIT. EHR · Knowledge Graphs · LLMs · Causal Inference.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: "jekyll, jekyll-theme, academic-website, portfolio-website"
-lang: "en"
-icon: "⚛️"
-
 url: "https://avocada.github.io" # the base hostname & protocol for your site
 baseurl: "" # leave empty for user/ORG sites
 last_updated: false
@@ -180,24 +166,7 @@ keep_files:
   - CNAME
   - .nojekyll
 
-plugins:
-  - jekyll-archives-v2
-  - jekyll-email-protect
-  - jekyll-feed
-  - jekyll-get-json
-  - jekyll-imagemagick
-  - jekyll-jupyter-notebook
-  - jekyll-link-attributes
-  - jekyll-minifier
-  - jekyll-paginate-v2
-  - jekyll-regex-replace
-  - jekyll/scholar
-  - jekyll-sitemap
-  - jekyll-tabs
-  - jekyll-terser
-  - jekyll-toc
-  - jekyll-twitter-plugin
-  - jemoji
+plugins: []
 
 defaults:
   - scope:

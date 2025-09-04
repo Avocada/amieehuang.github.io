@@ -13,3 +13,15 @@ group :jekyll_plugins do
   # Add Jekyll plugins here if you use any, e.g.:
   # gem "jekyll-seo-tag"
 end
+
+gem "feedjira", "~> 3.2.2"
+
+gem "faraday", "~> 1.10"
+
+gem "nokogiri", "~> 1.18"
+
+gem "httparty", "~> 0.21"
+
+gem "activesupport", "~> 7.1"
+
+gem "jekyll-archives", "~> 2.2"
