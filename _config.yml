@@ -17,7 +17,7 @@ keywords: "jekyll, jekyll-theme, academic-website, portfolio-website"
 lang: "en"
 icon: "⚛️"
 
-url: "https://amieehuang.github.io" # the base hostname & protocol for your site
+url: "https://avocada.github.io" # the base hostname & protocol for your site
 baseurl: "" # leave empty for user/ORG sites
 last_updated: false
 impressum_path:
