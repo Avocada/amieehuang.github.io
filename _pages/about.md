@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-nav: true
+nav: false          # <- avoid duplicate menu item (keep the one in _data/navigation.yml)
 nav_order: 1
 
 subtitle: >
@@ -12,12 +12,15 @@ subtitle: >
 
 profile:
   align: right
-  image: /assets/img/profile_pic.jpg  
+  image: /assets/img/profile_pic.jpg
   image_circular: false
 
-news: false            # hide the news box on the home page
-selected_papers: []  # show selected pubs in a compact style
-social: false           # show social icons under the hero
+# turn off all optional blocks on the About layout
+announcements:
+  enabled: false
+latest_posts:
+  enabled: false
+# do NOT define selected_papers or social here (keeps the page clean)
 ---
 
 # 👋 Hey, I’m Amiee
