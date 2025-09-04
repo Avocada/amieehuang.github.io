@@ -1,11 +1,21 @@
-{% if site.bib_search %}
-  <script src="{{ '/assets/js/bibsearch.js' | relative_url | bust_file_cache }}" type="module"></script>
+<div id="bib-search" style="margin:1rem 0;">
   <input
-    type="text"
-    id="bibsearch"
-    spellcheck="false"
-    autocomplete="off"
-    class="search bibsearch-form-input"
-    placeholder="Type to filter"
+    id="bib-search-input"
+    type="search"
+    placeholder="Search publications…"
+    style="width:100%;padding:.6rem .8rem;border:1px solid var(--global-divider-color);border-radius:6px;"
   >
-{% endif %}
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var input = document.getElementById('bib-search-input');
+    function filter() {
+      var term = (input.value || '').toLowerCase();
+      document.querySelectorAll('ol.bibliography li').forEach(function (li) {
+        var text = (li.textContent || '').toLowerCase();
+        li.style.display = text.indexOf(term) > -1 ? '' : 'none';
+      });
+    }
+    input.addEventListener('input', filter);
+  });
+</script>

@@ -44,6 +44,7 @@ horizontal: false
 {% else %}
 {%- assign sorted_projects = ALL_PROJECTS | sort: 'importance' -%}
 {% if page.horizontal %}
+
 <div class="container">
 <div class="row row-cols-1 row-cols-md-2">
 {% for project in sorted_projects %}
