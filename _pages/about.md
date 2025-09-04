@@ -16,7 +16,7 @@ profile:
   image_circular: false
 
 news: false            # hide the news box on the home page
-selected_papers: false  # show selected pubs in a compact style
+selected_papers: []  # show selected pubs in a compact style
 social: false           # show social icons under the hero
 ---
 
