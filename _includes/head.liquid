@@ -4,35 +4,45 @@
 {%- assign cache_bust = site.time | date: '%s' -%}
 
 <!-- Main site styles (compiled from assets/css/main.scss) -->
-<link rel="stylesheet"
-      href="{{ '/assets/css/main.css' | relative_url }}?v={{ cache_bust }}">
+<link
+  rel="stylesheet"
+  href="{{ '/assets/css/main.css' | relative_url }}?v={{ cache_bust }}"
+>
 
 <!-- Optional: Google Fonts (uncomment if you want them) -->
 {%- comment -%}
-<link rel="stylesheet" href="{{ site.third_party_libraries.google_fonts.url.fonts }}">
+  <link rel="stylesheet" href="{{ site.third_party_libraries.google_fonts.url.fonts }}">
 {%- endcomment -%}
 
 <!-- Optional: code syntax highlighting (safe to keep) -->
-<link rel="stylesheet"
-      href="{{ '/assets/css/jekyll-pygments-themes-github.css' | relative_url }}"
-      id="highlight_theme_light">
+<link
+  rel="stylesheet"
+  href="{{ '/assets/css/jekyll-pygments-themes-github.css' | relative_url }}"
+  id="highlight_theme_light"
+>
 
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
 {% if site.enable_darkmode %}
   <!-- Dark Mode -->
   <script src="{{ '/assets/js/theme.js' | relative_url }}?v={{ cache_bust }}"></script>
-  <link rel="stylesheet"
-        href="{{ '/assets/css/jekyll-pygments-themes-native.css' | relative_url }}"
-        media="none"
-        id="highlight_theme_dark">
-  <script>initTheme();</script>
+  <link
+    rel="stylesheet"
+    href="{{ '/assets/css/jekyll-pygments-themes-native.css' | relative_url }}"
+    media="none"
+    id="highlight_theme_dark"
+  >
+  <script>
+    initTheme();
+  </script>
 {% endif %}
 
 <!-- Favicon -->
 {% if site.icon.size <= 4 %}
-  <link rel="shortcut icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>">
+  <link
+    rel="shortcut icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>"
+  >
 {% elsif site.icon != blank %}
   <link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url }}">
 {% endif %}

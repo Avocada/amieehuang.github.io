@@ -6,7 +6,7 @@ footer_fixed: true
 search_enabled: true
 max_width: 930px
 
-plugins: []        # ← no plugins
+plugins: [] # ← no plugins
 
 markdown: kramdown
 highlighter: rouge
