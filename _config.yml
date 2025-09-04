@@ -6,7 +6,23 @@ footer_fixed: true
 search_enabled: true
 max_width: 930px
 
-plugins: [] # ← no plugins
+plugins:
+  - jekyll-toc
+  - jekyll-scholar
+
+scholar:
+  style: apa
+  locale: en
+  source: _bibliography
+  bibliography: papers.bib
+  bibliography_template: bib
+  query: "@*"
+  group_by: year
+  group_order: descending
+
+collections:
+  projects:
+    output: true
 
 markdown: kramdown
 highlighter: rouge

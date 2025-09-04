@@ -5,7 +5,7 @@
 
 @use "sass:color";
 
-// Colors
+/* ---------------- Colors ---------------- */
 $red-color: #ff3636 !default;
 $red-color-dark: #b71c1c !default;
 $orange-color: #f29105 !default;
@@ -26,24 +26,21 @@ $yellow-color: #efcc00 !default;
 
 $grey-color: #828282 !default;
 $grey-color-light: color.adjust($grey-color, $lightness: 40%);
-$grey-color-dark: #1c1c1d;
-$grey-900: #212529;
+$grey-color-dark: #1c1c1d !default;
+$grey-900: #212529 !default;
 
 $white-color: #ffffff !default;
 $black-color: #000000 !default;
 
-// Theme colors
-
+/* --------------- Theme-ish --------------- */
 $code-bg-color-light: rgba($purple-color, 0.05);
 $code-bg-color-dark: #2c3237 !default;
 
-// Font awesome location
+/* Font/icon paths */
 $fa-font-path: "../webfonts";
-
-// Tabler icons location
 $ti-font-path: "../fonts";
 
-// Back To Top button config
+/* Back To Top button */
 $back-to-top-z-index: 10;
 $back-to-top-bottom: 30px;
 $back-to-top-right: 30px;
@@ -51,19 +48,11 @@ $back-to-top-diameter: 40px;
 $back-to-top-height: $back-to-top-diameter;
 $back-to-top-width: $back-to-top-diameter;
 
-/* Hero heading & lead text */
-.h1,
-h1.hero-title {
-  font-size: $hero-h1-size;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
-}
-
-.lead {
-  font-size: $hero-lead-size;
-  color: var(--global-text-color);
-  opacity: 0.9;
-  line-height: 1.6;
-  margin-top: 0.75rem;
-}
+/* --------------- Hero helpers --------------- */
+/* Define these here so other partials can use them */
+$hero-h1-size: clamp(2.25rem, 2.5vw + 1.5rem, 3.25rem) !default;
+$hero-lead-size: clamp(1.1rem, 0.8vw + 1rem, 1.25rem) !default;
+$hero-max-width: 1100px !default;
+$hero-gap: 3rem !default;
+$hero-radius: 18px !default;
+$hero-shadow: 0 12px 30px rgba(0,0,0,.12), 0 6px 12px rgba(0,0,0,.06) !default;
