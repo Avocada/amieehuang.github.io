@@ -2,17 +2,17 @@
 layout: about
 title: about
 permalink: /
+nav: true
+nav_order: 1
 subtitle: >
   <a href='https://www.hsph.harvard.edu/'>Harvard T.H. Chan School of Public Health</a> ·
   <a href='https://hsph.harvard.edu/biostatistics/'>Biostatistics</a> ·
   <a href='https://regulatoryscience.harvard.edu/'>Harvard-MIT Center for Regulatory Science</a>
-
 profile:
   align: right
   image: profile_pic.jpg
   image_circular: false
-
-news: true
+news: false
 selected_papers: true
 social: true
 ---
