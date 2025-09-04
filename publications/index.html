@@ -36,7 +36,7 @@
 <!-- Main site styles (compiled from assets/css/main.scss) -->
 <link
   rel="stylesheet"
-  href="/assets/css/main.css?v=1757015580"
+  href="/assets/css/main.css?v=1757015865"
 >
 
 <!-- Optional: Google Fonts (uncomment if you want them) --><!-- Optional: code syntax highlighting (safe to keep) -->
@@ -50,7 +50,7 @@
 
 
   <!-- Dark Mode -->
-  <script src="/assets/js/theme.js?v=1757015580"></script>
+  <script src="/assets/js/theme.js?v=1757015865"></script>
   <link
     rel="stylesheet"
     href="/assets/css/jekyll-pygments-themes-native.css"
@@ -204,7 +204,23 @@
   </header>
 
   <article>
-    
+    <div id="bib-search" style="margin:1rem 0;">
+  <input id="bib-search-input" type="search" placeholder="Search publications…" style="width:100%;padding:.6rem .8rem;border:1px solid var(--global-divider-color);border-radius:6px;" />
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var input = document.getElementById('bib-search-input');
+    function filter() {
+      var term = (input.value || '').toLowerCase();
+      document.querySelectorAll('ol.bibliography li').forEach(function (li) {
+        var text = (li.textContent || '').toLowerCase();
+        li.style.display = text.indexOf(term) > -1 ? '' : 'none';
+      });
+    }
+    input.addEventListener('input', filter);
+  });
+</script>
+
 <h3 id="selected">selected</h3>
 
 <h2 class="bibliography">2025</h2>
