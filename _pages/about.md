@@ -24,7 +24,7 @@ nav_order: 1
 
     <p>
       Previously, I completed my PhD in Statistics at the
-      <a href="https://www.hku.hk/">University of Hong Kong</a> with
+      <a href="https://www.hku.hk/">University of Hong Kong</a> with Prof.
       <a href="https://gdli-stat.github.io/">Guodong Li</a>, supported by the
       <a href="https://cerg1.ugc.edu.hk/hkpfs/index.html">Hong Kong PhD Fellowship</a>.
     </p>
