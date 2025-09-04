@@ -1,40 +1,44 @@
 ---
-layout: about
+layout: page
 title: about
 permalink: /
-nav: false # <- avoid duplicate menu item (keep the one in _data/navigation.yml)
+nav: false
 nav_order: 1
-
-subtitle: >
-  <a href='https://www.hsph.harvard.edu/'>Harvard T.H. Chan School of Public Health</a> ·
-  <a href='https://hsph.harvard.edu/biostatistics/'>Biostatistics</a> ·
-  <a href='https://regulatoryscience.harvard.edu/'>Harvard-MIT Center for Regulatory Science</a>
-
-profile:
-  align: right
-  image: /assets/img/profile_pic.jpg
-  image_circular: false
-
-# turn off all optional blocks on the About layout
-announcements:
-  enabled: false
-latest_posts:
-  enabled: false
-# do NOT define selected_papers or social here (keeps the page clean)
 ---
 
-# 👋 Hey, I’m Amiee
+<div class="hero">
+  <div class="hero-text">
+    <h1 class="hero-title">👋 Hey, I’m Amiee</h1>
 
-I’m a Postdoctoral Fellow in Biostatistics at the Harvard T.H. Chan School of Public Health, advised by Prof.[Tianxi
-Cai](https://scholar.harvard.edu/tcai), and a Regulatory Science Fellow at the [Harvard-MIT Center for Regulatory
-Science](https://hmcrs.org/) with Dr. [Florence
-Bourgeois](https://research.childrenshospital.org/researchers/florence-bourgeois).
+    <p class="lead">
+      I’m a Postdoctoral Fellow in Biostatistics at the Harvard T.H. Chan School of Public Health
+      and a Regulatory Science Fellow at the Harvard-MIT Center for Regulatory Science.
+    </p>
 
-I work on **longitudinal EHR**, **knowledge graphs & representation learning**, **LLMs / generative modeling**, and
-**causal inference / RWE**.
+    <p>
+      Advised by Prof. <a href="https://scholar.harvard.edu/tcai">Tianxi Cai</a> and working with
+      Dr. <a href="https://research.childrenshospital.org/researchers/florence-bourgeois">Florence Bourgeois</a>.
+      My work spans <strong>longitudinal EHR</strong>, <strong>knowledge graphs &amp; representation learning</strong>,
+      <strong>LLMs / generative modeling</strong>, and <strong>causal inference / RWE</strong>.
+    </p>
 
-Previously, I completed my PhD in Statistics at the [University of Hong Kong](https://www.hku.hk/) with [Guodong
-Li](https://gdli-stat.github.io/), supported by the [Hong Kong PhD
-Fellowship](https://cerg1.ugc.edu.hk/hkpfs/index.html).
+    <p>
+      Previously, I completed my PhD in Statistics at the
+      <a href="https://www.hku.hk/">University of Hong Kong</a> with
+      <a href="https://gdli-stat.github.io/">Guodong Li</a>, supported by the
+      <a href="https://cerg1.ugc.edu.hk/hkpfs/index.html">Hong Kong PhD Fellowship</a>.
+    </p>
 
-👉 See my full **[CV (PDF)]({{ site.url }}/assets/pdf/CV.pdf)**.
+    <p>
+      👉 See my full <a href="{{ '/assets/pdf/CV.pdf' | relative_url }}"><strong>CV (PDF)</strong></a>.
+    </p>
+  </div>
+
+  <div class="hero-photo">
+    <img
+      class="hero-portrait"
+      src="{{ '/assets/img/profile_pic.jpg' | relative_url }}"
+      alt="Portrait of Amiee"
+    >
+  </div>
+</div>

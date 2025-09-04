@@ -18,20 +18,17 @@ body {
 }
 
 body.fixed-top-nav {
-  // Add some padding for the nav-bar.
   padding-top: 56px;
-}
-
+} /* space for fixed navbar   */
 body.sticky-bottom-footer {
-  // Remove padding below footer.
   padding-bottom: 0;
-}
+} /* remove space for footer  */
 
 .container {
   max-width: $max-content-width;
 }
 
-// Profile
+/* Old profile block (safe to keep) */
 .profile {
   img {
     width: 100%;
@@ -68,55 +65,56 @@ body.sticky-bottom-footer {
 }
 
 .hero-title {
-  // use on your h1
   display: flex;
   align-items: center;
   gap: 0.55rem;
 
-  // make the wave emoji sit nicely with the text
+  /* optional: <span class="wave">👋</span> inside the h1 */
   .wave {
-    font-size: 0.85em; // <span class="wave">👋</span>
+    font-size: 0.85em;
     transform: translateY(2px);
   }
 }
 
 .hero-subtitle {
-  // your one-line location + role
   @extend .lead;
   font-weight: 600;
 }
 
-.hero-portrait {
+/* Wrapper for the portrait column */
+.hero-photo {
   justify-self: center;
-  position: relative;
 
-  img {
-    display: block;
-    width: clamp(260px, 40vw, 440px);
-    height: auto;
-    border-radius: $hero-radius;
-    box-shadow: $hero-shadow;
-    transform: rotate(3deg);
-    transform-origin: center;
-    object-fit: cover;
-  }
-
-  // keep a gentle tilt only on larger screens
   @media (max-width: 960px) {
-    img {
-      transform: none;
-      width: min(75vw, 420px);
-    }
+    order: -1; /* move photo above text on small screens */
     margin-top: 0.75rem;
   }
 }
 
-/* Social icons under the portrait (or anywhere) */
+/* The portrait image itself */
+.hero-portrait {
+  display: block;
+  width: clamp(260px, 40vw, 440px);
+  height: auto;
+  border-radius: $hero-radius;
+  box-shadow: $hero-shadow;
+  transform: rotate(3deg);
+  transform-origin: center;
+  object-fit: cover;
+
+  @media (max-width: 960px) {
+    transform: none; /* keep it straight on mobile */
+    width: min(75vw, 420px);
+  }
+}
+
+/* Social icons row (optional) */
 .socials {
   display: flex;
   gap: 1rem;
   align-items: center;
   margin-top: 1.25rem;
+
   a {
     display: inline-flex;
     width: 34px;
@@ -133,23 +131,15 @@ body.sticky-bottom-footer {
       color 0.15s ease;
     color: var(--global-text-color);
   }
+
   a:hover {
     transform: translateY(-1px);
     background-color: var(--global-bg-color);
-    border-color: var(--global-text-color); // simple + works in light & dark
+    border-color: var(--global-text-color);
   }
 }
 
-// TODO: redefine content layout.
-
 /******************************************************************************
- * Publications
+ * Publications / Projects
+ * (left as-is; customize later)
  ******************************************************************************/
-
-// TODO: redefine publications layout.
-
-/*****************************************************************************
-* Projects
-*****************************************************************************/
-
-// TODO: redefine projects layout.

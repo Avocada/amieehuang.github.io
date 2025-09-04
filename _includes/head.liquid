@@ -3,6 +3,16 @@
 
 {%- assign cache_bust = site.time | date: '%s' -%}
 
+<!-- Bootstrap (local) -->
+<link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url }}">
+
+<!-- OPTIONAL: MDB (local) -->
+<link rel="stylesheet" href="{{ '/assets/css/mdb.min.css' | relative_url }}">
+
+<!-- Your compiled theme CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+
+
 <!-- Main site styles (compiled from assets/css/main.scss) -->
 <link
   rel="stylesheet"
