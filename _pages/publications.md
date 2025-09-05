@@ -8,4 +8,4 @@ nav_order: 2
 
 {% include bib_search.liquid %}
 
-{% bibliography -f papers --query @* --template bib_topic %}
+{% bibliography -f papers --query @* %}

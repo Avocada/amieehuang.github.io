@@ -1,0 +1,57 @@
+{%- comment -%} Publication item — inline actions {%- endcomment -%}
+
+{%- assign A = entry.author -%}
+{%- assign A = A | replace: 'Feiqing Huang', '<strong>Feiqing Huang</strong>' -%}
+{%- assign A = A | replace: 'Huang, Feiqing', '<strong>Huang, Feiqing</strong>' -%}
+{%- assign A = A | replace: 'Amiee Huang', '<strong>Amiee Huang</strong>' -%}
+
+<div class="pub">
+  <div class="pub-cite">
+    {{ A | markdownify | remove: '<p>' | remove: '</p>' }}
+    {% if entry.year %} ({{ entry.year }}){% endif %}.
+    {% if entry.url or entry.website %}
+      <a class="pub-title" href="{{ entry.url | default: entry.website }}">{{ entry.title }}</a>.
+    {% else %}
+      <span class="pub-title">{{ entry.title }}</span>.
+    {% endif %}
+    <span class="pub-venue">
+      {%- if entry.journal -%}
+        <em>{{ entry.journal }}</em>
+      {%- endif -%}
+      {%- if entry.booktitle -%}
+        {% if entry.journal %}, {% endif %}In <em>{{ entry.booktitle }}</em>
+      {%- endif -%}
+      {%- if entry.volume -%}
+        , <strong>{{ entry.volume }}</strong>
+      {%- endif -%}
+      {%- if entry.number %}({{ entry.number }}){% endif -%}
+      {%- if entry.pages %}, {{ entry.pages }}{% endif -%}
+    </span>
+    <span class="pub-actions">
+      {%- if entry.pdf -%}
+        <a href="{{ entry.pdf }}"><i class="far fa-file-pdf"></i> PDF</a>
+      {%- endif -%}
+      {%- if entry.code -%}
+        <a href="{{ entry.code }}"><i class="fas fa-code"></i> CODE</a>
+      {%- endif -%}
+      {%- if entry.dataset -%}
+        <a href="{{ entry.dataset }}"><i class="fas fa-database"></i> DATASET</a>
+      {%- endif -%}
+      {%- if entry.slides -%}
+        <a href="{{ entry.slides }}"><i class="fas fa-desktop"></i> SLIDES</a>
+      {%- endif -%}
+      {%- if entry.video -%}
+        <a href="{{ entry.video }}"><i class="fas fa-video"></i> VIDEO</a>
+      {%- endif -%}
+      {%- if entry.project -%}
+        <a href="{{ entry.project }}"><i class="fas fa-link"></i> PROJECT</a>
+      {%- endif -%}
+      {%- if entry.doi -%}
+        <a href="https://doi.org/{{ entry.doi }}"><i class="fas fa-link"></i> DOI</a>
+      {%- endif -%}
+      {%- if entry.website -%}
+        <a href="{{ entry.website }}"><i class="fas fa-globe"></i> WEBSITE</a>
+      {%- endif -%}
+    </span>
+  </div>
+</div>

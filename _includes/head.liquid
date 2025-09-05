@@ -9,21 +9,10 @@
 <!-- OPTIONAL: MDB (local) -->
 <link rel="stylesheet" href="{{ '/assets/css/mdb.min.css' | relative_url }}">
 
-<!-- Your compiled theme CSS -->
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+<!-- Main theme CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ cache_bust }}">
 
-<!-- Main site styles (compiled from assets/css/main.scss) -->
-<link
-  rel="stylesheet"
-  href="{{ '/assets/css/main.css' | relative_url }}?v={{ cache_bust }}"
->
-
-<!-- Optional: Google Fonts (uncomment if you want them) -->
-{%- comment -%}
-  <link rel="stylesheet" href="{{ site.third_party_libraries.google_fonts.url.fonts }}">
-{%- endcomment -%}
-
-<!-- Optional: code syntax highlighting (safe to keep) -->
+<!-- Syntax highlighting (light) -->
 <link
   rel="stylesheet"
   href="{{ '/assets/css/jekyll-pygments-themes-github.css' | relative_url }}"
@@ -44,6 +33,25 @@
   <script>
     initTheme();
   </script>
+{% endif %}
+
+{%- comment -%}
+  Publications page extras: fonts + page-specific CSS.
+  Adjust the condition if your permalink/URL differs.
+{%- endcomment -%}
+{% if page.permalink == '/publications/' or page.url contains '/publications' %}
+  <!-- Performance: preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonts: Inter (sections) + Merriweather (page title) -->
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Merriweather:wght@700&display=swap"
+  >
+
+  <!-- Publications-only styles -->
+  <link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}?v={{ cache_bust }}">
 {% endif %}
 
 <!-- Favicon -->
