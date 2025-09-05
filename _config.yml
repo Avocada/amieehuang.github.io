@@ -17,8 +17,10 @@ scholar:
   bibliography: papers.bib
   bibliography_template: bib
   query: "@*"
-  group_by: year
-  group_order: descending
+  group_by: topic          # <- group sections by topic
+  group_order: ascending   # A→Z; (use 'descending' if you prefer Z→A)
+  sort_by: year            # <- inside each topic, sort by year
+  order: descending        # newest first
 
 collections:
   projects:
