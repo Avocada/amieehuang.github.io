@@ -15,7 +15,6 @@ scholar:
   locale: en
   source: _bibliography
   bibliography: papers.bib
-  bibliography_template: bib_topic
   query: "@*"
   group_by: topic # <- group sections by topic
   group_order: ascending # A→Z; (use 'descending' if you prefer Z→A)
