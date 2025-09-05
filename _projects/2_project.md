@@ -77,7 +77,6 @@ Clinical information comes in **complementary forms** — e.g., a narrative note
 - **Concept relations (UMLS):** higher **AUC** than teachers on most relation classes (e.g., parent/child, causative, method-of).
 - **RCC recurrence (3-class):** the **gap** between sentence vs concept-only embeddings **shrinks** with LINE projections, enabling concept-only analytics.
 
-
 ---
 
 ## 5) Efficient by design
