@@ -16,14 +16,6 @@ related_publications: true
 
 ---
 
-### Links
-
-- PDF (add when ready)
-- Code (optional)
-- Slides / Poster (optional)
-
----
-
 ## 1) Problem & intuition
 
 Clinical information comes in **complementary forms** — e.g., a narrative note and its extracted **UMLS concepts**. We often only have access to one form (privacy, governance).  
